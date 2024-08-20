@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+ <link rel="shortcut icon" href="img/rps.jpeg" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Rock Paper Scissors</h1>
+
+    <div class="name-container">
+      <input type="text" id="user-name" placeholder="Enter your name" />
+      <button id="start-game">Start Game</button>
+      <button id="reset-game">Reset</button>
+      <button id="exit-game">Exit</button>
+    </div>
+
+    <div class="user-name-container">
+      <p id="displayed-user-name"></p>
+    </div>
+
+    <div class="choices">
+      <div class="choice" id="rock">
+        <img src="./img/rock.png" />
+      </div>
+      <div class="choice" id="paper">
+        <img src="./img/paper.png" />
+      </div>
+      <div class="choice" id="scissors">
+        <img src="./img/scissors.png" />
+      </div>
+    </div>
+
+    <div class="choices-container">
+      <div class="user-choice-container">
+        <p>Your choice:</p>
+        <p id="user-choice"></p>
+      </div>
+      <div class="comp-choice-container">
+        <p>Computer's choice:</p>
+        <p id="comp-choice"></p>
+      </div>
+    </div>
+
+    <div class="score-board">
+      <div class="score">
+        <p id="user-score">0</p>
+        <p>You</p>
+      </div>
+      <div class="score">
+        <p id="comp-score">0</p>
+        <p>Comp</p>
+      </div>
+    </div>
+
+    <div class="msg-container">
+      <p id="msg">Play your move</p>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
